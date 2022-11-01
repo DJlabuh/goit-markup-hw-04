@@ -126,9 +126,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
   margin-left: 50px;
 }
 .contacts .link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -140,6 +141,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
+}
+.item-icon {
+  margin-right: 10px;
+  fill: var(--title-text-color);
+}
+.item-icon:hover,
+.item-icon:focus {
+  fill: var(--accent-color);
 }
 
 /* Hero */
