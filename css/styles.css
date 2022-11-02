@@ -7,6 +7,7 @@
   --button-color: #F5F4FA;
   --footer-color: #2F303A;
   --button-active: #188CE8;
+  --icon-color: #AFB1B8;
 }
 
 body {
@@ -142,12 +143,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .contacts .link:focus {
   color: var(--accent-color);
 }
-.item-icon {
+.icon {
   margin-right: 10px;
   fill: var(--title-text-color);
 }
-.item-icon:hover,
-.item-icon:focus {
+.link .icon:hover,
+.link .icon:focus {
   fill: var(--accent-color);
 }
 
@@ -192,6 +193,19 @@ h1, h2, h3, h4, h5, h6, p, ul {
   margin-right: 30px;
 }
 .features>.item:nth-child(4n) {
+  margin-right: 0;
+}
+.features .icon-bg {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--button-color);
+}
+.features .icon {
+  display: inline-block;
   margin-right: 0;
 }
 .features .title {
@@ -257,11 +271,40 @@ h1, h2, h3, h4, h5, h6, p, ul {
   text-align: center;
 }
 .command-info .text {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
-
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social>.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+.social>.item:nth-child(4n) {
+  margin-right: 0;
+}
+.social>.item:hover,
+.social>.item:focus {
+  background-color: var(--accent-color);
+  border-radius: 75px;
+  cursor: pointer;
+}
+.social .icon {
+  fill: var(--icon-color);
+  margin: 0;
+}
+.social .icon:hover,
+.social .icon:focus {
+  fill: var(--white-color);
+}
 /* Footer */
 
 .footer {
