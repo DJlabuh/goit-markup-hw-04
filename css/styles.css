@@ -345,6 +345,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
   padding-bottom: 60px;
   background-color: var(--footer-color);
 }
+.footer>.container {
+  display: flex;
+}
 .footer .logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -373,7 +376,43 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .address .link:focus {
   color: var(--accent-color);
 }
-
+.footer-social {
+  margin-left: 70px;
+}
+.footer-social>.title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.footer-social-list {
+  display: flex;
+}
+.footer-social-list>.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 75px;
+}
+.footer-social-list>.item:nth-child(4n) {
+  margin-right: 0;
+}
+.footer-social-list>.item:hover,
+.footer-social-list>.item:focus {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.footer-social-list .icon {
+  margin: 0;
+  fill: var(--white-color);
+}
 
 /* Button */
 
